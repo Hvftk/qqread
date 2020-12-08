@@ -23,7 +23,7 @@ jobs:
       - name: "安装依赖和serverless工具"
         run: |
           npm install          
-          
+          sudo npm install serverless -g          
 
       - name: 'Set up Python'
         uses: actions/setup-python@v1
