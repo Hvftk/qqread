@@ -96,7 +96,7 @@ jobs:
           TG_PROXY_PORT: ${{ secrets.TG_PROXY_PORT}}
 
       - name: "部署到腾讯云函数"
-        run: serverless deploy
+        run: sls deploy
         env:
           STAGE: dev
           SERVERLESS_PLATFORM_VENDOR: tencent
