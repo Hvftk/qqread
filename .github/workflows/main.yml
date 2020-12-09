@@ -30,7 +30,8 @@ jobs:
         run: |
           pip install pipreqs
           pipreqs ./
-          pip install -r requirements.txt             
+          pip install -r requirements.txt
+          pip freeze >requirements.txt             
 
 
       - name: "将Secrets里面配置的变量添加到severless.yml里面作为环境变量"
